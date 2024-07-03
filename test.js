@@ -19,6 +19,7 @@ Diana.name = 'Diana'
 Diana.age = 23
 Diana.nation = 'Korean'
 Diana.job = 'Business lady'
+Diana.residence = 'Unknown'
 
 // Добавление нового Объекта, персонажа с разными свойствами
 const Adam = Object.create(person)
@@ -26,11 +27,15 @@ Adam.name = 'Adam',
 Adam.age = 25,
 Adam.nation = 'Unknown',
 Adam.job = 'Vacationist',
+Adam.residence = 'Unknown'
 
 // Добавление нового свойства
 Object.prototype.hello = function() {
     console.log(`Hello, ${this.name}!`);
 }
+
+// Добавление нового свойства
+Object.prototype.residence = ""
 
 console.log(Diana);
 console.log(Diana.aboutMe());
